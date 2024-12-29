@@ -1,9 +1,0 @@
-[Desktop Entry]
-Version=1.0
-Terminal=false
-Type=Application
-Name=WhatsApp Web
-Exec=/opt/brave.com/brave/brave-browser --profile-directory=Default --app-id=hnpfjngllnobngcgfapefoaidbinmjnm
-Icon=/home/yuki07/.assets/wa.png
-StartupWMClass=crx_hnpfjngllnobngcgfapefoaidbinmjnm
-X-XFCE-Source=file:///home/yuki07/.local/share/applications/brave-hnpfjngllnobngcgfapefoaidbinmjnm-Default.desktop

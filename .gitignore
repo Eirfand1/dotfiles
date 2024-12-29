@@ -1,0 +1,11 @@
+code/
+.npm/
+.bun/
+Downloads/
+.var/
+.ssh/
+.dbus/
+.local/
+.cache/
+.pki/
+

@@ -1,0 +1,14 @@
+2024/12/29-13:38:32.078 924 Reusing MANIFEST /home/yuki/.config/chromium/Default/IndexedDB/https_monkeytype.com_0.indexeddb.leveldb/MANIFEST-000001
+2024/12/29-13:38:32.078 924 Recovering log #13
+2024/12/29-13:38:32.078 924 Reusing old log /home/yuki/.config/chromium/Default/IndexedDB/https_monkeytype.com_0.indexeddb.leveldb/000013.log 
+2024/12/29-13:38:32.080 924 Delete type=2 #11
+2024/12/29-13:38:32.119 92d Level-0 table #18: started
+2024/12/29-13:38:32.121 92d Level-0 table #18: 2225 bytes OK
+2024/12/29-13:38:32.123 92d Delete type=0 #13
+2024/12/29-13:38:32.124 923 Manual compaction at level-0 from '\x00\x08\x00\x00\x00' @ 72057594037927935 : 1 .. '\x00\x09\x00\x00\x00' @ 0 : 0; will stop at '\x00\x08\x00\x00\x05' @ 341 : 1
+2024/12/29-13:38:32.124 923 Compacting 1@0 + 1@1 files
+2024/12/29-13:38:32.125 923 Generated table #19@0: 97 keys, 2366 bytes
+2024/12/29-13:38:32.125 923 Compacted 1@0 + 1@1 files => 2366 bytes
+2024/12/29-13:38:32.127 923 compacted to: files[ 0 1 1 0 0 0 0 ]
+2024/12/29-13:38:32.127 923 Delete type=2 #18
+2024/12/29-13:38:32.127 923 Manual compaction at level-0 from '\x00\x08\x00\x00\x05' @ 341 : 1 .. '\x00\x09\x00\x00\x00' @ 0 : 0; will stop at (end)

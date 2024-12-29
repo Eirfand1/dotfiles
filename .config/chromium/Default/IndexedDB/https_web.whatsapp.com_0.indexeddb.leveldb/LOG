@@ -1,0 +1,30 @@
+2024/12/29-15:12:24.434 2fe7 Reusing MANIFEST /home/yuki/.config/chromium/Default/IndexedDB/https_web.whatsapp.com_0.indexeddb.leveldb/MANIFEST-000001
+2024/12/29-15:12:24.434 2fe7 Recovering log #135
+2024/12/29-15:12:24.448 2fe7 Reusing old log /home/yuki/.config/chromium/Default/IndexedDB/https_web.whatsapp.com_0.indexeddb.leveldb/000135.log 
+2024/12/29-15:12:25.266 2fe8 Level-0 table #143: started
+2024/12/29-15:12:25.275 2fe8 Level-0 table #143: 225659 bytes OK
+2024/12/29-15:12:25.278 2fe8 Delete type=0 #135
+2024/12/29-15:12:25.278 2fe6 Manual compaction at level-0 from '\x00\x16\x00\x00\x00' @ 72057594037927935 : 1 .. '\x00\x17\x00\x00\x00' @ 0 : 0; will stop at (end)
+2024/12/29-15:12:25.280 2fe8 Level-0 table #145: started
+2024/12/29-15:12:25.282 2fe8 Level-0 table #145: 504 bytes OK
+2024/12/29-15:12:25.284 2fe8 Delete type=0 #142
+2024/12/29-15:12:25.284 2fe6 Manual compaction at level-0 from '\x00\x17\x00\x00\x00' @ 72057594037927935 : 1 .. '\x00\x18\x00\x00\x00' @ 0 : 0; will stop at '\x00\x17\x00\x00\x05' @ 871104 : 0
+2024/12/29-15:12:25.284 2fe6 Compacting 1@0 + 1@1 files
+2024/12/29-15:12:25.291 2fe6 Generated table #146@0: 5958 keys, 129120 bytes
+2024/12/29-15:12:25.291 2fe6 Compacted 1@0 + 1@1 files => 129120 bytes
+2024/12/29-15:12:25.293 2fe6 compacted to: files[ 0 1 4 0 0 0 0 ]
+2024/12/29-15:12:25.293 2fe6 Delete type=2 #145
+2024/12/29-15:12:25.293 2fe6 Manual compaction at level-0 from '\x00\x17\x00\x00\x05' @ 871104 : 0 .. '\x00\x18\x00\x00\x00' @ 0 : 0; will stop at (end)
+2024/12/29-15:12:26.971 2fe7 Compacting 1@1 + 4@2 files
+2024/12/29-15:12:27.020 2fe7 Generated table #147@1: 36925 keys, 2199927 bytes
+2024/12/29-15:12:27.096 2fe7 Generated table #148@1: 65330 keys, 2234089 bytes
+2024/12/29-15:12:27.140 2fe7 Generated table #149@1: 22263 keys, 2182982 bytes
+2024/12/29-15:12:27.198 2fe7 Generated table #150@1: 50471 keys, 1864022 bytes
+2024/12/29-15:12:27.198 2fe7 Compacted 1@1 + 4@2 files => 8481020 bytes
+2024/12/29-15:12:27.200 2fe7 compacted to: files[ 0 0 4 0 0 0 0 ]
+2024/12/29-15:12:27.200 2fe7 Delete type=2 #143
+2024/12/29-15:12:27.200 2fe7 Delete type=2 #138
+2024/12/29-15:12:27.200 2fe7 Delete type=2 #140
+2024/12/29-15:12:27.200 2fe7 Delete type=2 #139
+2024/12/29-15:12:27.200 2fe7 Delete type=2 #137
+2024/12/29-15:12:27.200 2fe7 Delete type=2 #146

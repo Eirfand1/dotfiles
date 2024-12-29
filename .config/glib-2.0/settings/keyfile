@@ -1,0 +1,20 @@
+[org/gtk/gtk4/settings/file-chooser]
+sort-directories-first=false
+show-hidden=false
+
+[org/gnome/nautilus/preferences]
+migrated-gtk-settings=true
+search-filter-time-type='last_modified'
+default-folder-viewer='icon-view'
+
+[org/gnome/nautilus/window-state]
+initial-size=(620, 416)
+
+[org/xfce/mousepad/state/application]
+session=['1;;+file:///home/yuki/Downloads/brave-bin-1.63.169_1.x86_64/INSTALL']
+
+[org/xfce/mousepad/state/window]
+width=640
+height=480
+maximized=false
+fullscreen=false
