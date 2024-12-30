@@ -8,12 +8,12 @@ import sys, os, re
 
 
 Colors = {
-	'AB' : { 'Name' : 'Active Back', 'Default' : '#579c8e' },
+	'AB' : { 'Name' : 'Active Back', 'Default' : '#31748f' },
 	'AF' : { 'Name' : 'Active Fore', 'Default' : '#ffffff' },
-	'AL' : { 'Name' : 'Active Line', 'Default' : '#292929' },
-	'NB' : { 'Name' : 'Normal Back', 'Default' : '#383838' },
-	'NF' : { 'Name' : 'Normal Fore', 'Default' : '#dadada' },
-	'NL' : { 'Name' : 'Normal Line', 'Default' : '#292929' },
+	'AL' : { 'Name' : 'Active Line', 'Default' : '#6e6a86' },
+	'NB' : { 'Name' : 'Normal Back', 'Default' : '#908caa' },
+	'NF' : { 'Name' : 'Normal Fore', 'Default' : '#c4a7e7' },
+	'NL' : { 'Name' : 'Normal Line', 'Default' : '#6e6a86' },
 }
 
 Options = {

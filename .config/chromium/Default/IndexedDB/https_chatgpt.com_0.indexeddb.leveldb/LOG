@@ -1,3 +1,3 @@
-2024/12/29-16:04:16.819 12c0 Reusing MANIFEST /home/yuki/.config/chromium/Default/IndexedDB/https_chatgpt.com_0.indexeddb.leveldb/MANIFEST-000001
-2024/12/29-16:04:16.819 12c0 Recovering log #4
-2024/12/29-16:04:16.821 12c0 Reusing old log /home/yuki/.config/chromium/Default/IndexedDB/https_chatgpt.com_0.indexeddb.leveldb/000004.log 
+2024/12/29-23:29:22.574 2036 Reusing MANIFEST /home/yuki/.config/chromium/Default/IndexedDB/https_chatgpt.com_0.indexeddb.leveldb/MANIFEST-000001
+2024/12/29-23:29:22.574 2036 Recovering log #4
+2024/12/29-23:29:22.575 2036 Reusing old log /home/yuki/.config/chromium/Default/IndexedDB/https_chatgpt.com_0.indexeddb.leveldb/000004.log 

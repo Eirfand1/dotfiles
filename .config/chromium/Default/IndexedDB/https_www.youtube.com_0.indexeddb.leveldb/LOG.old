@@ -1,3 +1,12 @@
-2024/12/29-13:13:49.899 924 Reusing MANIFEST /home/yuki/.config/chromium/Default/IndexedDB/https_www.youtube.com_0.indexeddb.leveldb/MANIFEST-000001
-2024/12/29-13:13:49.899 924 Recovering log #7
-2024/12/29-13:13:49.902 924 Reusing old log /home/yuki/.config/chromium/Default/IndexedDB/https_www.youtube.com_0.indexeddb.leveldb/000007.log 
+2024/12/30-09:10:24.763 3d3 Reusing MANIFEST /home/yuki/.config/chromium/Default/IndexedDB/https_www.youtube.com_0.indexeddb.leveldb/MANIFEST-000001
+2024/12/30-09:10:24.763 3d3 Recovering log #7
+2024/12/30-09:10:24.771 3d3 Reusing old log /home/yuki/.config/chromium/Default/IndexedDB/https_www.youtube.com_0.indexeddb.leveldb/000007.log 
+2024/12/30-09:16:23.975 3d4 Level-0 table #12: started
+2024/12/30-09:16:23.993 3d4 Level-0 table #12: 1717907 bytes OK
+2024/12/30-09:16:23.996 3d4 Delete type=0 #7
+2024/12/30-09:23:50.104 3d3 Compacting 1@1 + 1@2 files
+2024/12/30-09:23:50.116 3d3 Generated table #13@1: 388 keys, 67538 bytes
+2024/12/30-09:23:50.116 3d3 Compacted 1@1 + 1@2 files => 67538 bytes
+2024/12/30-09:23:50.118 3d3 compacted to: files[ 0 0 1 0 0 0 0 ]
+2024/12/30-09:23:50.118 3d3 Delete type=2 #12
+2024/12/30-09:23:50.119 3d3 Delete type=2 #9

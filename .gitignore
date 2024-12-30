@@ -8,4 +8,22 @@ Downloads/
 .local/
 .cache/
 .pki/
+.inputrc
+.gitconfig
+.bash_logout
+.bash_profile
+.bash_history
+.profile
+.viminfo
+sysfetch/
+.rustup/
+.mozilla/
+.config/nvim/
+.config/chromium/
+.config/mousepad/
+.config/glib-2.0/
+.config/htop/
+.config/xfce4/
+
+
 

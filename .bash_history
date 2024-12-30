@@ -183,3 +183,32 @@ brightnessctl s +10%
 vim rc.xml 
 openbox --reconfigure
 sudo reboot
+sudo tee /etc/sv/postgresql/run << EOF
+#!/bin/sh
+exec 2>&1
+exec chpst -u postgres:postgres postgres -D /var/lib/postgresql/data
+EOF
+
+sudo chmod +x /etc/sv/postgresql/run
+sudo ln -s /etc/sv/postgresql /var/service/
+sudo ln -s /etc/sv/postgresql /var/service/
+sudo sv start postgresql
+sudo sv start postgresql
+sudo rm /var/service/postgresql
+sudo ln -s /etc/sv/postgresql /var/service/
+sudo sv restart postgresql
+sudo -u postgres psql
+psql
+sudo xbps-install -S postgresql-client
+sudo -u postgres psql
+fish
+clear
+git clone https://github.com/wick3dr0se/sysfetch; cd ${_##*/}
+neofetch
+clear
+sudo cp sysfetch /usr/bin/local/
+sudo cp sysfetch /usr/local/bin/
+sysfetch
+clear
+fish
+exit
