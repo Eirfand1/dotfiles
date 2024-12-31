@@ -1,0 +1,20 @@
+[window]
+padding.x = 4
+padding.y = 4
+opacity = 1.0
+
+[font]
+normal.family = "Iosevka Nerd Font"
+normal.style = "Regular"
+bold.family = "Iosevka Nerd Font"
+bold.style = "Bold"
+italic.family = "Iosevka Nerd Font"
+italic.style = "Italic"
+
+size= 9.5
+
+[colors.primary]
+background = '#191724'
+
+
+

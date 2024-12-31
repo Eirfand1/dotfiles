@@ -1,0 +1,5 @@
+tint2 -c ~/.config/tint2/uncreative/uncreative.tint2rc &
+feh --bg-fil ~/wallpaper/japanese-sakura-painting-night.png &
+nm-applet &
+picom &
+ 
