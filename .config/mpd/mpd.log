@@ -1,0 +1,44 @@
+Jan 01 09:10 : exception: Failed to open '/home/yuki/.config/mpd/mpdstate': No such file or directory
+Jan 01 09:14 : update: added /Go to the Sea.mp4
+Jan 01 09:15 : ffmpeg/aac: Could not update timestamps for skipped samples.
+Jan 01 09:16 : update: added /Yung Kai - Blue.mp4
+Jan 01 09:20 : player: played "Yung Kai - Blue.mp4"
+Jan 01 09:27 : ffmpeg/aac: Could not update timestamps for skipped samples.
+Jan 01 09:32 : player: played "Go to the Sea.mp4"
+Jan 01 09:35 : ffmpeg/aac: Could not update timestamps for skipped samples.
+Jan 01 09:35 : ffmpeg/aac: Could not update timestamps for skipped samples.
+Jan 01 09:39 : player: played "Yung Kai - Blue.mp4"
+Jan 01 09:39 : ffmpeg/aac: Could not update timestamps for skipped samples.
+Jan 01 09:44 : player: played "Go to the Sea.mp4"
+Jan 01 09:47 : ffmpeg/aac: Could not update timestamps for skipped samples.
+Jan 01 09:52 : player: played "Go to the Sea.mp4"
+Jan 01 09:58 : player: played "Go to the Sea.mp4"
+Jan 01 09:58 : update: added /anNina - Taishou a Higurashi no Naku Koro ni Kai ED (with Lyrics).mp3
+Jan 01 10:02 : player: played "Yung Kai - Blue.mp4"
+Jan 01 10:06 : player: played "anNina - Taishou a Higurashi no Naku Koro ni Kai ED (with Lyrics).mp3"
+Jan 01 10:07 : update: added /茶太 - たそがれ空 - Chata - Tasogare Sora [9Y_mEHEBMbY].mp3
+Jan 01 10:07 : update: added /NOH SALLEH - ANGIN KENCANG official music video.mp3
+Jan 01 10:07 : update: added /Chata (茶太) - Rain (English sub).mp3
+Jan 01 10:10 : player: played "NOH SALLEH - ANGIN KENCANG official music video.mp3"
+Jan 01 10:10 : player: played "NOH SALLEH - ANGIN KENCANG official music video.mp3"
+Jan 01 10:27 : player: played "Chata (茶太) - Rain (English sub).mp3"
+Jan 01 10:32 : player: played "茶太 - たそがれ空 - Chata - Tasogare Sora [9Y_mEHEBMbY].mp3"
+Jan 01 10:59 : player: played "茶太 - たそがれ空 - Chata - Tasogare Sora [9Y_mEHEBMbY].mp3"
+Jan 01 11:56 : player: played "Chata (茶太) - Rain (English sub).mp3"
+Jan 01 12:01 : player: played "茶太 - たそがれ空 - Chata - Tasogare Sora [9Y_mEHEBMbY].mp3"
+Jan 02 06:44 : player: played "Yung Kai - Blue.mp4"
+Jan 02 06:49 : player: played "anNina - Taishou a Higurashi no Naku Koro ni Kai ED (with Lyrics).mp3"
+Jan 02 06:53 : player: played "NOH SALLEH - ANGIN KENCANG official music video.mp3"
+Jan 02 06:57 : player: played "Chata (茶太) - Rain (English sub).mp3"
+Jan 02 07:02 : player: played "茶太 - たそがれ空 - Chata - Tasogare Sora [9Y_mEHEBMbY].mp3"
+Jan 02 07:07 : player: played "anNina - Taishou a Higurashi no Naku Koro ni Kai ED (with Lyrics).mp3"
+Jan 02 07:11 : player: played "NOH SALLEH - ANGIN KENCANG official music video.mp3"
+Jan 02 07:15 : player: played "Chata (茶太) - Rain (English sub).mp3"
+Jan 02 07:19 : ffmpeg/aac: Could not update timestamps for skipped samples.
+Jan 02 07:24 : player: played "Go to the Sea.mp4"
+Jan 02 07:27 : player: played "Yung Kai - Blue.mp4"
+Jan 02 07:30 : ffmpeg/aac: Could not update timestamps for skipped samples.
+Jan 02 07:31 : ffmpeg/aac: Could not update timestamps for skipped samples.
+Jan 02 07:31 : ffmpeg/aac: Could not update timestamps for skipped samples.
+Jan 02 07:38 : ffmpeg/aac: Could not update timestamps for skipped samples.
+Jan 02 07:40 : player: played "anNina - Taishou a Higurashi no Naku Koro ni Kai ED (with Lyrics).mp3"

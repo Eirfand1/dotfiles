@@ -1,0 +1,21 @@
+sw_volume: 96
+audio_device_state:1:Pulse Audio
+audio_device_state:1:FIFO
+state: pause
+current: 2
+time: 105.367000
+random: 0
+repeat: 0
+single: 0
+consume: 0
+crossfade: 0
+mixrampdb: 0.000000
+mixrampdelay: -1.000000
+playlist_begin
+0:Go to the Sea.mp4
+1:Yung Kai - Blue.mp4
+2:anNina - Taishou a Higurashi no Naku Koro ni Kai ED (with Lyrics).mp3
+3:NOH SALLEH - ANGIN KENCANG official music video.mp3
+4:Chata (茶太) - Rain (English sub).mp3
+5:茶太 - たそがれ空 - Chata - Tasogare Sora [9Y_mEHEBMbY].mp3
+playlist_end

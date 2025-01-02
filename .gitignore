@@ -26,6 +26,12 @@ sysfetch/
 .config/xfce4/
 .cargo/
 Videos/
+Templates/
+Videos/
+Public/
+Android/
+.gnupg/
+Desktop/
 
 
 

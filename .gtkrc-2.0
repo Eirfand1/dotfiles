@@ -2,8 +2,8 @@
 # Any customization should be done in ~/.gtkrc-2.0.mine instead.
 
 include "/home/yuki/.gtkrc-2.0.mine"
-gtk-theme-name="Arc-Dark"
-gtk-icon-theme-name="Papirus"
+gtk-theme-name="rose-pine-gtk"
+gtk-icon-theme-name="rose-pine-icons"
 gtk-font-name="Roboto 10"
 gtk-cursor-theme-name="Adwaita"
 gtk-cursor-theme-size=0
@@ -15,6 +15,6 @@ gtk-enable-event-sounds=1
 gtk-enable-input-feedback-sounds=1
 gtk-xft-antialias=1
 gtk-xft-hinting=1
-gtk-xft-hintstyle="hintmedium"
+gtk-xft-hintstyle="hintslight"
 gtk-xft-rgba="rgb"
 gtk-modules="gail:atk-bridge"
