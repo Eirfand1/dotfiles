@@ -39,7 +39,7 @@ border_color_pressed = #000000 0
 #-------------------------------------
 # Panel
 panel_items = TSBC
-panel_size = 100% 26
+panel_size = 100% 27
 panel_margin = 0 0
 panel_padding = 4 5 0
 panel_background_id = 3

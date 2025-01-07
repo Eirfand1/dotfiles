@@ -1,9 +1,12 @@
 [Default Applications]
-text/html=chromium.desktop
-x-scheme-handler/http=chromium.desktop
-x-scheme-handler/https=chromium.desktop
-x-scheme-handler/about=chromium.desktop
-x-scheme-handler/unknown=chromium.desktop
+text/html=brave-browser.desktop
+x-scheme-handler/http=brave-browser.desktop
+x-scheme-handler/https=brave-browser.desktop
+x-scheme-handler/about=brave-browser.desktop
+x-scheme-handler/unknown=brave-browser.desktop
+application/zstd=Alacritty.desktop
 
 [Added Associations]
 video/mp4=vlc.desktop;
+text/plain=org.xfce.mousepad.desktop;
+application/zstd=Alacritty.desktop;
