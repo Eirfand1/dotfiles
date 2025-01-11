@@ -1,11 +1,11 @@
 [window]
-padding.x = 4
-padding.y = 4
+padding.x = 30 
+padding.y = 25 
 opacity = 1.0
 
 [font]
 normal.family = "Iosevka Nerd Font"
-normal.style = "Regular"
+normal.style = "Medium"
 bold.family = "Iosevka Nerd Font"
 bold.style = "Bold"
 italic.family = "Iosevka Nerd Font"

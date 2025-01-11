@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+
+<!--
+  This is a very simple config file with many options missing. For a complete
+  set of options with comments, see docs/rc.xml.all
+-->
+
+<labwc_config>
+  <theme>
+    <name>Adiantum</name>
+    <cornerRadius>0</cornerRadius>
+    <font>
+      <name>Roboto Mono</name>
+      <size>9</size>
+    </font>
+  </theme>
+
+  <keyboard>
+    <default />
+    <!-- Use a different terminal emulator -->
+    <keybind key="W-Return">
+      <action name="Execute" command="kitty" />
+    </keybind>
+    <!--
+      Remove a previously defined keybind
+      A shorter alternative is <keybind key="W-F4" />
+    -->
+    <keybind key="W-F4">
+      <action name="None" />
+    </keybind>
+    <keybind key="A-d">
+        <action name="Execute">
+            <command>dmenu_run</command>
+        </action>
+    </keybind>
+  </keyboard>
+
+	<libinput>
+		<device category="default">
+			<naturalScroll>yes</naturalScroll>
+		</device>
+	</libinput>
+</labwc_config>

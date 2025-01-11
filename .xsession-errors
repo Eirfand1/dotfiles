@@ -1,0 +1,114 @@
+tint2: Using glib slice allocator (default). Run tint2 with environment variable G_SLICE=always-malloc in case of strange behavior or crashes
+tint2: xRandr: Found crtc's: 4
+[1;34mtint2: xRandr: Linking output eDP1 with crtc 0, resolution 1366x768, DPI 119[0m
+tint2: xRandr: crtc 1 seems disabled
+tint2: xRandr: crtc 2 seems disabled
+tint2: xRandr: crtc 3 seems disabled
+tint2: No XSETTINGS manager, tint2 uses config option 'launcher_icon_theme'.
+tint2: Loading config file: /home/yuki/.config/tint2/tint2rc
+tint2: deprecated config option "primary_monitor_first"
+       Please see the documentation regarding the alternatives.
+tint2: real transparency off.... depth: 24
+tint2: panel items: TSBC
+tint2: Systray composited rendering on
+[1;32mtint2: Found power device BAT0[0m
+[1;32mFound battery "BAT0"[0m
+[1;32mtint2: Found power device AC[0m
+[1;32mFound mains "AC"[0m
+tint2: nb monitors 1, nb monitors used 1, nb desktops 4
+[1;34mtint2: panel 1 uses scale 1 [0m
+ERROR: openbox-xdg-autostart requires PyXDG to be installed
+tint2: Kernel uevent interface initialized...
+tint2: systray window 14680076
+[1;32mtint2: systray started[0m
+
+(nm-applet:3792): Gtk-WARNING **: 16:59:16.718: Unknown key gtk-window-scaling in /home/yuki/.config/gtk-3.0/settings.ini
+[1;32madd_icon: 18874371 (NetworkManager Applet), pid 3792, visual 0x55b8113b9d30, colormap 18874370, depth 32, width 1, height 1[0m
+
+(nm-applet:3792): GLib-GIO-WARNING **: 16:59:16.878: unable to send notifications through org.freedesktop.Notifications: GDBus.Error:org.freedesktop.DBus.Error.ServiceUnknown: The name org.freedesktop.Notifications was not provided by any .service files
+
+(volctl:3794): Gtk-WARNING **: 16:59:16.976: Unknown key gtk-window-scaling in /home/yuki/.config/gtk-3.0/settings.ini
+tint2: Detected compositor, restarting tint2...
+[1;33mtint2: remove_icon: 18874371 (Wi-Fi network connection “blabla” active: blabla (100%))[0m
+[1;33mtint2: ../src/main.c 782: restarting tint2...[0m
+tint2: xRandr: Found crtc's: 4
+[1;34mtint2: xRandr: Linking output eDP1 with crtc 0, resolution 1366x768, DPI 119[0m
+tint2: xRandr: crtc 1 seems disabled
+tint2: xRandr: crtc 2 seems disabled
+tint2: xRandr: crtc 3 seems disabled
+tint2: No XSETTINGS manager, tint2 uses config option 'launcher_icon_theme'.
+tint2: Loading config file: /home/yuki/.config/tint2/tint2rc
+tint2: deprecated config option "primary_monitor_first"
+       Please see the documentation regarding the alternatives.
+tint2: real transparency on... depth: 32
+tint2: panel items: TSBC
+tint2: Systray composited rendering on
+[1;32mtint2: Found power device BAT0[0m
+[1;32mFound battery "BAT0"[0m
+[1;32mtint2: Found power device AC[0m
+[1;32mFound mains "AC"[0m
+tint2: nb monitors 1, nb monitors used 1, nb desktops 4
+[1;34mtint2: panel 1 uses scale 1 [0m
+tint2: Kernel uevent interface initialized...
+tint2: systray window 14680077
+[1;32mtint2: systray started[0m
+[1;32madd_icon: 18874385 (Wi-Fi network connection “blabla” active: blabla (100%)), pid 3792, visual 0x55b8114541d0, colormap 18874370, depth 32, width 16, height 16[0m
+
+(lxappearance:3869): Gtk-WARNING **: 16:59:20.411: Unknown key gtk-window-scaling in /home/yuki/.config/gtk-3.0/settings.ini
+
+(lxappearance:3869): GLib-CRITICAL **: 16:59:20.522: g_utf8_collate: assertion 'str1 != NULL' failed
+
+(lxappearance:3869): GLib-CRITICAL **: 16:59:20.523: g_utf8_collate: assertion 'str2 != NULL' failed
+[0.542] Failed to load libsystemd.so with error: libsystemd.so.0.38.0: cannot open shared object file: No such file or directory
+
+[0.553] [glfw error 65544]: Notify: Failed to get server capabilities error: [org.freedesktop.DBus.Error.ServiceUnknown] The name org.freedesktop.Notifications was not provided by any .service files
+[Parent 4599, Main Thread] WARNING: Unknown key gtk-window-scaling in /home/yuki/.config/gtk-3.0/settings.ini: 'glib warning', file /topsrcdir/toolkit/xre/nsSigHandlers.cpp:201
+
+(Firefox:4599): Gtk-WARNING **: 17:01:03.764: Unknown key gtk-window-scaling in /home/yuki/.config/gtk-3.0/settings.ini
+JavaScript error: resource://gre/modules/XULStore.sys.mjs, line 84: Error: Can't find profile directory.
+JavaScript error: resource://gre/modules/XULStore.sys.mjs, line 84: Error: Can't find profile directory.
+JavaScript error: resource://gre/modules/XULStore.sys.mjs, line 84: Error: Can't find profile directory.
+JavaScript error: resource://gre/modules/XULStore.sys.mjs, line 84: Error: Can't find profile directory.
+JavaScript error: resource://gre/modules/XULStore.sys.mjs, line 84: Error: Can't find profile directory.
+
+(chromium:4693): Gtk-WARNING **: 17:01:10.049: Unknown key gtk-window-scaling in /home/yuki/.config/gtk-3.0/settings.ini
+[4693:4712:0107/170110.179464:ERROR:bus.cc(407)] Failed to connect to the bus: Could not parse server address: Unknown address type (examples of valid types are "tcp" and on UNIX "unix")
+[4693:4712:0107/170110.179609:ERROR:bus.cc(407)] Failed to connect to the bus: Could not parse server address: Unknown address type (examples of valid types are "tcp" and on UNIX "unix")
+[4693:4712:0107/170110.179750:ERROR:bus.cc(407)] Failed to connect to the bus: Could not parse server address: Unknown address type (examples of valid types are "tcp" and on UNIX "unix")
+[4693:4712:0107/170110.179803:ERROR:bus.cc(407)] Failed to connect to the bus: Could not parse server address: Unknown address type (examples of valid types are "tcp" and on UNIX "unix")
+[4693:4712:0107/170110.179835:ERROR:bus.cc(407)] Failed to connect to the bus: Could not parse server address: Unknown address type (examples of valid types are "tcp" and on UNIX "unix")
+[4693:4712:0107/170110.203900:ERROR:bus.cc(407)] Failed to connect to the bus: Could not parse server address: Unknown address type (examples of valid types are "tcp" and on UNIX "unix")
+[4693:4708:0107/170110.322141:ERROR:bus.cc(407)] Failed to connect to the bus: Could not parse server address: Unknown address type (examples of valid types are "tcp" and on UNIX "unix")
+[4693:4693:0107/170110.328601:ERROR:object_proxy.cc(576)] Failed to call method: org.freedesktop.DBus.NameHasOwner: object_path= /org/freedesktop/DBus: unknown error type: 
+[4693:4693:0107/170110.341269:ERROR:object_proxy.cc(576)] Failed to call method: org.freedesktop.DBus.NameHasOwner: object_path= /org/freedesktop/DBus: unknown error type: 
+[4693:4710:0107/170110.341615:ERROR:bus.cc(407)] Failed to connect to the bus: Could not parse server address: Unknown address type (examples of valid types are "tcp" and on UNIX "unix")
+[4693:4782:0107/170110.344345:ERROR:object_proxy.cc(576)] Failed to call method: org.freedesktop.DBus.Properties.Get: object_path= /org/freedesktop/UPower: org.freedesktop.DBus.Error.ServiceUnknown: The name org.freedesktop.UPower was not provided by any .service files
+[4693:4782:0107/170110.344563:ERROR:object_proxy.cc(576)] Failed to call method: org.freedesktop.UPower.GetDisplayDevice: object_path= /org/freedesktop/UPower: org.freedesktop.DBus.Error.ServiceUnknown: The name org.freedesktop.UPower was not provided by any .service files
+[4693:4782:0107/170110.344658:ERROR:object_proxy.cc(576)] Failed to call method: org.freedesktop.UPower.EnumerateDevices: object_path= /org/freedesktop/UPower: org.freedesktop.DBus.Error.ServiceUnknown: The name org.freedesktop.UPower was not provided by any .service files
+[4693:4693:0107/170110.348188:ERROR:object_proxy.cc(576)] Failed to call method: org.freedesktop.DBus.NameHasOwner: object_path= /org/freedesktop/DBus: unknown error type: 
+[4693:4708:0107/170110.348371:ERROR:bus.cc(407)] Failed to connect to the bus: Could not parse server address: Unknown address type (examples of valid types are "tcp" and on UNIX "unix")
+[4693:4693:0107/170110.349049:ERROR:object_proxy.cc(576)] Failed to call method: org.freedesktop.DBus.NameHasOwner: object_path= /org/freedesktop/DBus: unknown error type: 
+[4693:4708:0107/170110.349097:ERROR:bus.cc(407)] Failed to connect to the bus: Could not parse server address: Unknown address type (examples of valid types are "tcp" and on UNIX "unix")
+[4693:4693:0107/170110.349666:ERROR:object_proxy.cc(576)] Failed to call method: org.freedesktop.DBus.NameHasOwner: object_path= /org/freedesktop/DBus: unknown error type: 
+[4693:4708:0107/170110.349722:ERROR:bus.cc(407)] Failed to connect to the bus: Could not parse server address: Unknown address type (examples of valid types are "tcp" and on UNIX "unix")
+[4693:4693:0107/170110.350919:ERROR:object_proxy.cc(576)] Failed to call method: org.freedesktop.DBus.NameHasOwner: object_path= /org/freedesktop/DBus: unknown error type: 
+[4693:4712:0107/170111.740426:ERROR:bus.cc(407)] Failed to connect to the bus: Could not parse server address: Unknown address type (examples of valid types are "tcp" and on UNIX "unix")
+[4693:4712:0107/170111.740630:ERROR:bus.cc(407)] Failed to connect to the bus: Could not parse server address: Unknown address type (examples of valid types are "tcp" and on UNIX "unix")
+[4693:4712:0107/170111.863340:ERROR:bus.cc(407)] Failed to connect to the bus: Could not parse server address: Unknown address type (examples of valid types are "tcp" and on UNIX "unix")
+[4693:4712:0107/170111.863376:ERROR:bus.cc(407)] Failed to connect to the bus: Could not parse server address: Unknown address type (examples of valid types are "tcp" and on UNIX "unix")
+[Parent 5004, Main Thread] WARNING: Unknown key gtk-window-scaling in /home/yuki/.config/gtk-3.0/settings.ini: 'glib warning', file /topsrcdir/toolkit/xre/nsSigHandlers.cpp:201
+
+(Firefox:5004): Gtk-WARNING **: 17:01:42.891: Unknown key gtk-window-scaling in /home/yuki/.config/gtk-3.0/settings.ini
+JavaScript error: moz-extension://143f92ad-0ebe-414d-8af3-f903c3a56e49/background.js, line 2: TypeError: (destructured parameter) is undefined
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: resource://services-settings/Utils.sys.mjs, line 238: TypeError: NetworkError: Network request failed
+[Parent 5768, Main Thread] WARNING: Unknown key gtk-window-scaling in /home/yuki/.config/gtk-3.0/settings.ini: 'glib warning', file /topsrcdir/toolkit/xre/nsSigHandlers.cpp:201
+
+(Firefox:5768): Gtk-WARNING **: 17:02:42.644: Unknown key gtk-window-scaling in /home/yuki/.config/gtk-3.0/settings.ini
+JavaScript error: moz-extension://143f92ad-0ebe-414d-8af3-f903c3a56e49/background.js, line 2: TypeError: (destructured parameter) is undefined
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+X connection to :0 broken (explicit kill or server shutdown).

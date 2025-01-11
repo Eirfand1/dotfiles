@@ -2,8 +2,8 @@ sw_volume: 94
 audio_device_state:1:Pulse Audio
 audio_device_state:1:FIFO
 state: pause
-current: 9
-time: 146.383000
+current: 0
+time: 75.689000
 random: 0
 repeat: 1
 single: 0
@@ -26,4 +26,12 @@ playlist_begin
 11:Koubou by Mami Kawada - Ending Shakugan no Shana 3 - lyrics romaji (sub eng & sub indo).mp3
 12:Thanks (Vocal).mp3
 13:Thanks (You Version) (with lyrics).mp3
+14:Evangelion - Tsubasa wo Kudasai.mp3
+15:Galileo Galilei - Aoi Shiori.mp3
+16:The End Of Evangelion - Komm Süsser Tod - Come Sweet Death (HQ).mp3
+17:Suzumiya Haruhi Ending Special Version blu-ray (HD).mp3
+18:God Knows - Haruhi Suzumiya (CV. Aya Hirano) [Romaji, Español, English, Lyrics].mp3
+19:DAOKO 米津玄師打上花火MUSIC VIDEO.mp3
+20:ヨルシカ - ただ君に晴れ (MUSIC VIDEO).mp3
+21:Putih Abu-Abu - Bagaikan Langit (Official Music Video).mp3
 playlist_end

@@ -1,0 +1,34 @@
+00:00:00.053 [ERROR] [../src/theme.c:715] padding.height is no longer supported
+00:00:00.071 [ERROR] [backend/x11/backend.c:704] X11 error: op ChangeProperty (no minor), code Atom (no extension), sequence 61, value 0
+The XKEYBOARD keymap compiler (xkbcomp) reports:
+> Warning:          Unsupported maximum keycode 708, clipping.
+>                   X11 cannot support keycodes above 255.
+> Warning:          Could not resolve keysym XF86KbdInputAssistPrevgrou
+> Warning:          Could not resolve keysym XF86KbdInputAssistNextgrou
+Errors from xkbcomp are not fatal to the X server
+
+(lxappearance:2383): Gtk-WARNING **: 16:53:27.343: Unknown key gtk-window-scaling in /home/yuki/.config/gtk-3.0/settings.ini
+
+(lxappearance:2383): GLib-CRITICAL **: 16:53:27.416: g_utf8_collate: assertion 'str1 != NULL' failed
+
+(lxappearance:2383): GLib-CRITICAL **: 16:53:27.416: g_utf8_collate: assertion 'str2 != NULL' failed
+[2397, Main Thread] WARNING: Unknown key gtk-window-scaling in /home/yuki/.config/gtk-3.0/settings.ini: 'glib warning', file /topsrcdir/toolkit/xre/nsSigHandlers.cpp:201
+
+(Firefox:2397): Gtk-WARNING **: 16:53:46.827: Unknown key gtk-window-scaling in /home/yuki/.config/gtk-3.0/settings.ini
+JavaScript error: moz-extension://143f92ad-0ebe-414d-8af3-f903c3a56e49/background.js, line 2: TypeError: (destructured parameter) is undefined
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+[0.517] Failed to load libsystemd.so with error: libsystemd.so.0.38.0: cannot open shared object file: No such file or directory
+
+[0.528] [glfw error 65544]: Notify: Failed to get server capabilities error: [org.freedesktop.DBus.Error.ServiceUnknown] The name org.freedesktop.Notifications was not provided by any .service files
+JavaScript error: resource://services-settings/Utils.sys.mjs, line 238: TypeError: NetworkError: Network request failed
+[10.473] [PARSE ERROR] Unknown DCS escape code: zz
+[10.473] [PARSE ERROR] Unknown CSI code: 'm' with start_modifier: '␀' and end_modifier: '%' and parameters: '0'
+[45.677] [PARSE ERROR] The application is trying to use xterm's modifyOtherKeys. This is superseded by the kitty keyboard protocol: https://sw.kovidgoyal.net/kitty/keyboard-protocol/ the application should be updated to use that
+[45.680] [PARSE ERROR] The application is trying to use xterm's modifyOtherKeys. This is superseded by the kitty keyboard protocol: https://sw.kovidgoyal.net/kitty/keyboard-protocol/ the application should be updated to use that
+[45.680] [PARSE ERROR] The application is trying to use xterm's modifyOtherKeys. This is superseded by the kitty keyboard protocol: https://sw.kovidgoyal.net/kitty/keyboard-protocol/ the application should be updated to use that
+[0.506] Failed to load libsystemd.so with error: libsystemd.so.0.38.0: cannot open shared object file: No such file or directory
+
+[0.517] [glfw error 65544]: Notify: Failed to get server capabilities error: [org.freedesktop.DBus.Error.ServiceUnknown] The name org.freedesktop.Notifications was not provided by any .service files
+(EE) failed to read Wayland events: Broken pipe

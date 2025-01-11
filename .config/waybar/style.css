@@ -1,0 +1,128 @@
+@keyframes blink-warning {
+    70% {
+        color: #e0d1ff; /* Rosepine text color */
+    }
+
+    to {
+        color: #e0d1ff; /* Rosepine text color */
+        background-color: #f4a261; /* Rosepine warning color */
+    }
+}
+
+@keyframes blink-critical {
+    70% {
+        color: #e0d1ff; /* Rosepine text color */
+    }
+
+    to {
+        color: #e0d1ff; /* Rosepine text color */
+        background-color: #f25d6b; /* Rosepine error color */
+    }
+}
+
+/* Reset all styles */
+* {
+    border: none;
+    border-radius: 0;
+    min-height: 0;
+    margin: 0;
+    padding: 0;
+    font-size: 12px;
+}
+
+/* The whole bar */
+#waybar {
+    background: #191724; /* Rosepine dark background */
+    color: #e0d1ff; /* Rosepine text color */
+    font-family: Roboto;
+}
+
+window#waybar.hidden {
+    opacity: 0.2;
+}
+
+#battery,
+#bluetooth,
+#network,
+#pulseaudio,
+#tray,
+#taskbar,
+#clock {
+	padding-left: 6px;
+	padding-right: 6px;
+
+}
+
+#battery {
+    padding-right: 5px;
+}
+
+#battery.charging {
+    padding-right: 5px;
+}
+
+#bluetooth {
+    padding-right: 5px;
+}
+
+#battery {
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+#battery.warning {
+    color: #f4a261; /* Rosepine warning color */
+}
+
+#battery.critical {
+    color: #f25d6b; /* Rosepine error color */
+}
+
+#battery.warning.discharging {
+    animation-name: blink-warning;
+    animation-duration: 3s;
+}
+
+#battery.critical.discharging {
+    animation-name: blink-critical;
+    animation-duration: 2s;
+}
+
+#network {
+   padding-right: 5px;
+   padding-left: 4px;
+}
+
+#pulseaudio {
+    padding-right: 5px;
+}
+
+#clock {
+    padding-right: 5px;
+}
+
+#taskbar button {
+    padding-left: 5px;
+    padding-right: 5px;
+    margin: 0 4px;
+    color: #e0d1ff; /* Rosepine text color */
+}
+
+#taskbar button:hover {
+	background-color: #232136;	
+	color: white;
+}
+
+#taskbar button.active {
+    color: #e0d1ff; /* Rosepine text color */
+    border-bottom: 2px solid #f7b4d8; /* Rosepine highlight color */
+}
+
+#taskbar button.minimized {
+    color: gray;
+}    
+
+#tray {
+    padding-right: 0px;
+}
