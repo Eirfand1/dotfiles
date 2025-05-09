@@ -14,7 +14,7 @@
 
 (set-face-attribute 'default nil
                     :family "Iosevka Nerd Font Mono"
-                    :height 140
+                    :height 120
                     :weight 'light)
 
 (setq-default tab-width 4)
