@@ -15,7 +15,7 @@
 (set-face-attribute 'default nil
                     :family "Iosevka Nerd Font Mono"
                     :height 120
-                    :weight 'light)
+                    :weight 'regular)
 
 (setq-default tab-width 4)
 (setq ring-bell-function 'ignore)
@@ -44,7 +44,7 @@
 
 (use-package doom-themes
   :config
-  (load-theme 'doom-1337 t))
+  (load-theme 'gruber-darker t))
 
 ;; ==================
 ;; Dashboard
@@ -150,9 +150,9 @@
              (buffer-substring-no-properties (point-min) (point-max))))
    (current-buffer)))
 
-;; ==================
-;; Custom Shell Shortcut
-;; ==================
+;; ===========================
+;; Custom Shortcut or whatever
+;; ===========================
 
 (defun my/split-and-shell ()
   "Split window vertically and open shell."
@@ -175,7 +175,7 @@
  '(package-selected-packages
    '(company-go dashboard doom-themes emms exec-path-from-shell
 				flymake-go go-autocomplete gruber-darker-theme
-				impatient-mode lsp-ui pdf-tools typit)))
+				impatient-mode lsp-ui multiple-cursors pdf-tools typit)))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
@@ -183,7 +183,7 @@
  ;; If there is more than one, they won't work right.
  )
 
-
+;; like "yy p" in vim
 (defun duplicate-line()
   (interactive)
   (move-beginning-of-line 1)
@@ -194,3 +194,30 @@
   (yank)
   )
 (global-set-key (kbd "C-,") 'duplicate-line)
+
+;; like "o" in vim
+(defun make-newline-below()
+  (interactive)
+  (unless (eolp)
+    (end-of-line))
+  (newline-and-indent))
+(global-set-key (kbd "C-o") 'make-newline-below)
+
+;; like "O" in vim
+
+(defun make-newline-above()
+  (interactive)
+  (unless (bolp)
+	(beginning-of-line))
+  (newline)
+  (forward-line -1)
+  (indent-according-to-mode))
+(global-set-key (kbd "C-S-o") 'make-newline-above)
+
+;; Multiple cursor
+(use-package multiple-cursors
+  :ensure t
+  :bind (("C-S-c C-S-c" . mc/edit-lines)
+         ("C->"         . mc/mark-next-like-this)
+         ("C-<"         . mc/mark-previous-like-this)
+         ("C-c C-<"     . mc/mark-all-like-this)))
