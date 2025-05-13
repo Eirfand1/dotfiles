@@ -12,6 +12,9 @@
 (global-display-line-numbers-mode t)
 (setq display-line-numbers-type 'relative)
 
+(setq scroll-conservatively 10)
+(setq scroll-margin 7)
+
 (set-face-attribute 'default nil
                     :family "Iosevka Nerd Font Mono"
                     :height 120
@@ -52,7 +55,7 @@
 
 (use-package dashboard
   :config
-  (setq dashboard-banner-logo-title "“Il faut imaginer Sisyphe heureux.” — Albert Camus"
+  (setq dashboard-banner-logo-title "“Il faut imaginer Sisyphe heureux.”  — Albert Camus"
         dashboard-center-content t
         dashboard-items '((recents  . 5)
                           (projects . 5)))
@@ -71,7 +74,7 @@
 
 
 ;; ==================
-;; LSP & Go Support
+;; LSP Support
 ;; ==================
 
 (use-package lsp-mode
@@ -84,18 +87,24 @@
         lsp-completion-enable t
         lsp-auto-guess-root t
         lsp-enable-file-watchers nil
+		lsp-eldoc-hook nil
+		lsp-eldoc-enable-hover nil
+		lsp-signature-auto-activate nil
         lsp-headerline-breadcrumb-enable nil))
 
-(setq lsp-eldoc-enable-hover nil)
+(setq eldoc-echo-area-use-multiline-p nil)
 (remove-hook 'eldoc-documentation-functions #'lsp-eldoc-function)
 (setq eldoc-message-function #'ignore)
-
 
 (use-package lsp-ui
   :commands lsp-ui-mode
   :config
-  (setq lsp-ui-doc-enable t
-        lsp-ui-doc-position 'at-point))
+  
+  (setq
+   lsp-ui-doc-enable t
+   lsp-ui-doc-position 'at-point
+  
+  ))
 
 (unless (package-installed-p 'go-mode)
   (package-install 'go-mode))
