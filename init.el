@@ -70,17 +70,34 @@
          (lsp-mode . company-mode))
   :config
   (setq company-idle-delay 0.1
-        company-minimum-prefix-length 1))
-
+        company-minimum-prefix-length 1
+        
+        
+        company-frontends '(company-pseudo-tooltip-frontend)
+        
+        
+        company-show-quick-access t
+        company-tooltip-minimum-width 40
+        company-tooltip-align-annotations t
+        company-tooltip-flip-when-above t
+        
+        
+        company-show-numbers t
+        company-echo-metadata-frontend nil))
 
 ;; ==================
 ;; LSP Support
 ;; ==================
 
+
 (use-package lsp-mode
   :commands (lsp lsp-deferred)
   :hook ((go-mode . lsp-deferred)
-         (js-mode . lsp-deferred))
+         (js-mode . lsp-deferred)
+		 (php-mode . lsp-defered)
+		 (php-ts-mode-run-php-webserver . lsp-defered)
+		 (php-ts-mode . lsp-defered)
+		 )
   :config
   (setq lsp-enable-snippet t
         lsp-prefer-flymake nil
@@ -90,8 +107,12 @@
 		lsp-eldoc-hook nil
 		lsp-eldoc-enable-hover nil
 		lsp-signature-auto-activate nil
-        lsp-headerline-breadcrumb-enable nil))
+        lsp-headerline-breadcrumb-enable nil
+		lsp-signature-render-documentation nil
+		))
 
+
+(global-eldoc-mode -1)
 (setq eldoc-echo-area-use-multiline-p nil)
 (remove-hook 'eldoc-documentation-functions #'lsp-eldoc-function)
 (setq eldoc-message-function #'ignore)
@@ -184,7 +205,8 @@
  '(package-selected-packages
    '(company-go dashboard doom-themes emms exec-path-from-shell
 				flymake-go go-autocomplete gruber-darker-theme
-				impatient-mode lsp-ui multiple-cursors pdf-tools typit)))
+				impatient-mode lsp-ui multiple-cursors pdf-tools
+				php-mode typit)))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
