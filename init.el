@@ -45,9 +45,20 @@
 ;; Themes & Looks
 ;; ================
 
-(use-package doom-themes
+;;  (load-theme 'gruber-darker t))
+
+
+
+(use-package gruvbox-theme
+  :ensure t
   :config
-  (load-theme 'gruber-darker t))
+  (load-theme 'gruvbox-dark-medium t)) ; atau 'gruvbox-light-medium
+
+(let ((bg (face-attribute 'default :background)))
+  (set-face-attribute 'line-number nil :background bg)
+  (set-face-attribute 'line-number-current-line nil :background bg :foreground "#DEC20B" :weight 'bold))
+
+
 
 ;; ==================
 ;; Dashboard
@@ -94,9 +105,9 @@
   :commands (lsp lsp-deferred)
   :hook ((go-mode . lsp-deferred)
          (js-mode . lsp-deferred)
-		 (php-mode . lsp-defered)
-		 (php-ts-mode-run-php-webserver . lsp-defered)
-		 (php-ts-mode . lsp-defered)
+		 (php-mode . lsp-deferred)
+		 (php-ts-mode-run-php-webserver . lsp-deferred)
+		 (php-ts-mode . lsp-deferred)
 		 )
   :config
   (setq lsp-enable-snippet t
@@ -109,7 +120,28 @@
 		lsp-signature-auto-activate nil
         lsp-headerline-breadcrumb-enable nil
 		lsp-signature-render-documentation nil
+		lsp-clients-php-server-command t
+		lsp-php-composer-dir t
+		
 		))
+
+
+ (setq lsp-intelephense-stubs
+        ["apache", "bcmath", "bz2", "calendar", "com_dotnet", "Core", "ctype", 
+         "curl", "date", "dba", "dom", "enchant", "exif", "fileinfo", "filter", 
+         "fpm", "ftp", "gd", "hash", "iconv", "imap", "interbase", "intl", "json", 
+         "ldap", "libxml", "mbstring", "mysqli", "oci8", "odbc", "openssl", "pcntl", 
+         "pcre", "PDO", "pdo_ibm", "pdo_mysql", "pdo_pgsql", "pdo_sqlite", "pgsql", 
+         "Phar", "posix", "pspell", "readline", "recode", "Reflection", "regex", 
+         "session", "shmop", "SimpleXML", "snmp", "soap", "sockets", "sodium", 
+         "SPL", "sqlite3", "standard", "superglobals", "sysvmsg", "sysvsem", 
+         "sysvshm", "tidy", "tokenizer", "xml", "xmlreader", "xmlrpc", "xmlwriter", 
+         "xsl", "zip", "zlib"])
+  
+  ;; Enable PHP LSP by default
+  (with-eval-after-load 'php-mode
+    (require 'lsp-mode)
+    (add-hook 'php-mode-hook #'lsp-deferred))
 
 
 (global-eldoc-mode -1)
@@ -193,26 +225,6 @@
     (eshell)))
 
 (global-set-key (kbd "C-c s") #'my/split-and-shell)
-(custom-set-variables
- ;; custom-set-variables was added by Custom.
- ;; If you edit it by hand, you could mess it up, so be careful.
- ;; Your init file should contain only one such instance.
- ;; If there is more than one, they won't work right.
- '(custom-enabled-themes '(gruber-darker))
- '(custom-safe-themes
-   '("01a9797244146bbae39b18ef37e6f2ca5bebded90d9fe3a2f342a9e863aaa4fd"
-	 default))
- '(package-selected-packages
-   '(company-go dashboard doom-themes emms exec-path-from-shell
-				flymake-go go-autocomplete gruber-darker-theme
-				impatient-mode lsp-ui multiple-cursors pdf-tools
-				php-mode typit)))
-(custom-set-faces
- ;; custom-set-faces was added by Custom.
- ;; If you edit it by hand, you could mess it up, so be careful.
- ;; Your init file should contain only one such instance.
- ;; If there is more than one, they won't work right.
- )
 
 ;; like "yy p" in vim
 (defun duplicate-line()
@@ -252,3 +264,39 @@
          ("C->"         . mc/mark-next-like-this)
          ("C-<"         . mc/mark-previous-like-this)
          ("C-c C-<"     . mc/mark-all-like-this)))
+
+
+; ==================
+;; Neotree Configuration
+;; ==================
+(use-package neotree
+  :ensure t
+  :bind ([f8] . neotree-toggle)  
+  :config
+  (setq neo-theme (if (display-graphic-p) 'icons 'arrow))
+  (setq neo-smart-open t)
+  (setq neo-window-width 30)
+  (setq neo-window-fixed-size nil))  
+
+  ;; (evil-define-key 'normal neotree-mode-map (kbd "TAB") 'neotree-enter)
+  ;; (evil-define-key 'normal neotree-mode-map (kbd "SPC") 'neotree-quick-look)
+  ;; (evil-define-key 'normal neotree-mode-map (kbd "q") 'neotree-hide)
+  ;; (evil-define-key 'normal neotree-mode-map (kbd "RET") 'neotree-enter)
+  ;; (evil-define-key 'normal neotree-mode-map (kbd "g") 'neotree-refresh)
+  ;; (evil-define-key 'normal neotree-mode-map (kbd "n") 'neotree-next-line)
+  ;; (evil-define-key 'normal neotree-mode-map (kbd "p") 'neotree-previous-line)
+  ;; (evil-define-key 'normal neotree-mode-map (kbd "A") 'neotree-stretch-toggle)
+  ;; (evil-define-key 'normal neotree-mode-map (kbd "H") 'neotree-hidden-file-toggle))
+
+(custom-set-variables
+ ;; custom-set-variables was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ '(package-selected-packages nil))
+(custom-set-faces
+ ;; custom-set-faces was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ )
