@@ -3,7 +3,7 @@
 ;; ======================
 
 (setq inhibit-startup-message t)
-(tool-bar-mode -1)
+(tool-bar-mode -1)	
 (menu-bar-mode -1)
 (scroll-bar-mode -1)
 (blink-cursor-mode 0)
@@ -47,12 +47,10 @@
 
 ;;  (load-theme 'gruber-darker t))
 
-
-
 (use-package gruvbox-theme
   :ensure t
   :config
-  (load-theme 'gruvbox-dark-medium t)) ; atau 'gruvbox-light-medium
+  (load-theme 'gruvbox-dark-hard t)) ; atau 'gruvbox-light-medium
 
 (let ((bg (face-attribute 'default :background)))
   (set-face-attribute 'line-number nil :background bg)
@@ -293,7 +291,12 @@
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- '(package-selected-packages nil))
+ '(package-selected-packages
+   '(all-the-icons company-go dashboard doom-themes emms
+				   exec-path-from-shell flymake-go go-autocomplete
+				   gruber-darker-theme gruvbox-theme impatient-mode
+				   lsp-ui multiple-cursors neotree pdf-tools php-mode
+				   typit web-mode)))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
