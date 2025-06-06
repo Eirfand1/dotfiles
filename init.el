@@ -13,7 +13,7 @@
 (setq display-line-numbers-type 'relative)
 
 (setq scroll-conservatively 10)
-(setq scroll-margin 7)
+(setq scroll-margin 10)
 
 (set-face-attribute 'default nil
                     :family "Iosevka Nerd Font Mono"
@@ -106,6 +106,10 @@
 		 (php-mode . lsp-deferred)
 		 (php-ts-mode-run-php-webserver . lsp-deferred)
 		 (php-ts-mode . lsp-deferred)
+         (typescript-ts-mode . lsp-deferred)  
+         (typescript-ts-base-mode . lsp-deferred)  
+		 (web-mode . lsp-deferred)
+		 (typescript-mode . lsp-deferred)
 		 )
   :config
   (setq lsp-enable-snippet t
@@ -122,7 +126,6 @@
 		lsp-php-composer-dir t
 		
 		))
-
 
  (setq lsp-intelephense-stubs
         ["apache", "bcmath", "bz2", "calendar", "com_dotnet", "Core", "ctype", 
@@ -214,15 +217,43 @@
 ;; Custom Shortcut or whatever
 ;; ===========================
 
-(defun my/split-and-shell ()
-  "Split window vertically and open shell."
-  (interactive)
-  (split-window-right)
-  (other-window 1)
-  (let ((default-directory "~/"))
-    (eshell)))
+(use-package multi-term
+  :ensure t
+  :config
+  (setq multi-term-program shell-file-name)
 
-(global-set-key (kbd "C-c s") #'my/split-and-shell)
+
+  (defun my-term-split-below ()
+    "Open multi-term in split below, or switch to existing term."
+    (interactive)
+    (let ((terms (cl-remove-if-not
+                  (lambda (buf)
+                    (with-current-buffer buf
+                      (derived-mode-p 'term-mode)))
+                  (buffer-list))))
+      (split-window-below)
+      (other-window 1)
+      (if terms
+          (switch-to-buffer (car terms))
+        (multi-term))))
+  
+  (defun my-term-new ()
+  (interactive)
+  (multi-term))
+
+  (global-set-key (kbd "C-c n") #'multi-term-next)
+  (global-set-key (kbd "C-c p") #'multi-term-prev)
+  
+  
+  (global-set-key (kbd "C-c t") 
+    (lambda ()
+      (interactive)
+      (if (term-in-line-mode)
+          (term-char-mode)
+        (term-line-mode))))
+  
+  (global-set-key (kbd "C-c m") #'my-term-new)  
+  (global-set-key (kbd "C-c s") #'my-term-split-below))
 
 ;; like "yy p" in vim
 (defun duplicate-line()
@@ -265,16 +296,20 @@
 
 
 ; ==================
-;; Neotree Configuration
+;; treemacs
 ;; ==================
-(use-package neotree
+(use-package treemacs
   :ensure t
-  :bind ([f8] . neotree-toggle)  
+  :defer t
+  :bind
+  (:map global-map
+        ("<f8>" . treemacs)) ;; Tekan F8 buat toggle sidebar
   :config
-  (setq neo-theme (if (display-graphic-p) 'icons 'arrow))
-  (setq neo-smart-open t)
-  (setq neo-window-width 30)
-  (setq neo-window-fixed-size nil))  
+  (setq treemacs-width 30
+        treemacs-follow-after-init t
+        treemacs-silent-refresh t
+        treemacs-show-hidden-files t))
+
 
   ;; (evil-define-key 'normal neotree-mode-map (kbd "TAB") 'neotree-enter)
   ;; (evil-define-key 'normal neotree-mode-map (kbd "SPC") 'neotree-quick-look)
@@ -291,12 +326,7 @@
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- '(package-selected-packages
-   '(all-the-icons company-go dashboard doom-themes emms
-				   exec-path-from-shell flymake-go go-autocomplete
-				   gruber-darker-theme gruvbox-theme impatient-mode
-				   lsp-ui multiple-cursors neotree pdf-tools php-mode
-				   typit web-mode)))
+ '(package-selected-packages nil))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
