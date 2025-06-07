@@ -2,6 +2,13 @@
 ;; UI & Basic Settings
 ;; ======================
 
+(setq gc-cons-threshold (* 100 1024 1024))
+
+(use-package gcmh
+  :init
+  (gcmh-mode 1))
+
+
 (setq inhibit-startup-message t)
 (tool-bar-mode -1)	
 (menu-bar-mode -1)
@@ -14,6 +21,8 @@
 
 (setq scroll-conservatively 10)
 (setq scroll-margin 10)
+
+(setq make-backup-files nil)
 
 (set-face-attribute 'default nil
                     :family "Iosevka Nerd Font Mono"
@@ -50,11 +59,20 @@
 (use-package gruvbox-theme
   :ensure t
   :config
-  (load-theme 'gruvbox-dark-hard t)) ; atau 'gruvbox-light-medium
+  (load-theme 'gruvbox-dark-hard t)
+  (add-hook 'after-load-theme-hook
+            (lambda ()
+              (set-face-attribute 'region nil :background "#2d2d2d" :foreground nil))))
+
 
 (let ((bg (face-attribute 'default :background)))
   (set-face-attribute 'line-number nil :background bg)
-  (set-face-attribute 'line-number-current-line nil :background bg :foreground "#DEC20B" :weight 'bold))
+  (set-face-attribute 'line-number-current-line nil :background bg :foreground "#DEC20B" :weight 'bold) )
+
+(with-eval-after-load 'lsp-mode
+  (set-face-attribute 'lsp-face-highlight-textual nil :background "#2d2d2d" :foreground nil)
+  (set-face-attribute 'lsp-face-highlight-read nil :background "#2d2d2d" :foreground nil)
+  (set-face-attribute 'lsp-face-highlight-write nil :background "#2d2d2d" :foreground nil))
 
 
 
@@ -255,6 +273,7 @@
   (global-set-key (kbd "C-c m") #'my-term-new)  
   (global-set-key (kbd "C-c s") #'my-term-split-below))
 
+
 ;; like "yy p" in vim
 (defun duplicate-line()
   (interactive)
@@ -310,6 +329,19 @@
         treemacs-silent-refresh t
         treemacs-show-hidden-files t))
 
+(add-hook 'treemacs-mode-hook (lambda () (display-line-numbers-mode -1)))
+
+
+(use-package nerd-icons
+  :ensure t)
+
+(use-package treemacs-nerd-icons
+  :after treemacs
+  :ensure t
+  :config
+  (treemacs-load-theme "nerd-icons"))
+
+
 
   ;; (evil-define-key 'normal neotree-mode-map (kbd "TAB") 'neotree-enter)
   ;; (evil-define-key 'normal neotree-mode-map (kbd "SPC") 'neotree-quick-look)
@@ -326,7 +358,13 @@
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- '(package-selected-packages nil))
+ '(package-selected-packages
+   '(company-go dashboard dirvish doom-themes emms exec-path-from-shell
+				flymake-go gcmh go-autocomplete gruber-darker-theme
+				gruvbox-theme impatient-mode lsp-ui multi-term
+				multiple-cursors neotree pdf-tools php-mode
+				treemacs-all-the-icons treemacs-nerd-icons
+				typescript-mode typespec-ts-mode typit web-mode)))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
