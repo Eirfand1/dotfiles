@@ -1,0 +1,110 @@
+<?xml version="1.0"?>
+
+<!--
+This is a very simple config file with many options missing. For a complete
+set of options with comments, see docs/rc.xml.all
+-->
+
+<labwc_config>
+  <theme>
+	<name>obwaita-dark-flat</name>
+	<cornerRadius>6</cornerRadius>
+	<font>
+	  <name>Iosevka Nerd Font</name>
+	  <size>10</size>
+	</font>
+  </theme>
+
+
+  <desktops>
+	<number>4</number>
+	<names>
+	  <name>I</name>
+	  <name>II</name>
+	  <name>III</name>
+	  <name>IV</name>
+	</names>
+  </desktops>
+
+  <keyboard>
+		<repeatRate>40</repeatRate>
+    <repeatDelay>400</repeatDelay>
+
+	<default />
+	<!-- Use a different terminal emulator -->
+	<keybind key="W-Return">
+	  <action name="Execute" command="kitty" />
+	</keybind>
+	<!--
+		Remove a previously defined keybind
+		A shorter alternative is <keybind key="W-F4" />
+	-->
+	<keybind key="W-F4">
+	  <action name="None" />
+	</keybind>
+	<keybind key="A-d">
+	  <action name="Execute">
+		<command>wofi --show drun</command>
+	  </action>
+	</keybind>
+
+	<keybind key="W-d">
+	  <action name="Execute">
+		<command>dmenu_run</command>
+	  </action>
+	</keybind>
+
+	<keybind key="Super_L">
+	  <action name="Execute">
+		<command>xfce4-popup-whiskermenu</command>
+	  </action>
+	</keybind>
+
+	<keybind key="Print">
+	  <action name="Execute">
+		<command>xfce4-screenshooter</command>
+	  </action>
+	</keybind>
+
+	<keybind key="W-Print">
+	  <action name="Execute">
+		<command>~/bin/screenshot.sh</command>
+	  </action>
+	</keybind>
+
+	<keybind key="A-1">
+	  <action name="GoToDesktop">
+	  <to>1</to>
+	  </action>
+	</keybind>
+
+	<keybind key="A-2">
+	  <action name="GoToDesktop">
+		<to>2</to>
+	  </action>
+	</keybind>
+
+	<keybind key="A-3">
+	  <action name="GoToDesktop">
+		<to>3</to>
+	  </action>
+	</keybind>
+
+	<keybind key="A-4">
+	  <action name="GoToDesktop">
+		<to>4</to>
+	  </action>
+	</keybind>
+
+
+  </keyboard>
+
+  <libinput>
+	<device category="default">
+	  <naturalScroll>yes</naturalScroll>
+	</device>
+  </libinput>
+
+  
+
+</labwc_config>
