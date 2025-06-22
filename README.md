@@ -1,4 +1,4 @@
 ### Colorscheme
 - Adwaita
 
-![peak](content/simpleasshit.png)
+![peak](simpleasshit.png)
