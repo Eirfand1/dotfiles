@@ -7,8 +7,8 @@ set of options with comments, see docs/rc.xml.all
 
 <labwc_config>
   <theme>
-	<name>obwaita-dark-flat</name>
-	<cornerRadius>6</cornerRadius>
+	<name>obwaita-ob</name>
+	<cornerRadius>5</cornerRadius>
 	<font>
 	  <name>Iosevka Nerd Font</name>
 	  <size>10</size>
@@ -27,7 +27,7 @@ set of options with comments, see docs/rc.xml.all
   </desktops>
 
   <keyboard>
-		<repeatRate>40</repeatRate>
+	<repeatRate>40</repeatRate>
     <repeatDelay>400</repeatDelay>
 
 	<default />
@@ -44,13 +44,7 @@ set of options with comments, see docs/rc.xml.all
 	</keybind>
 	<keybind key="A-d">
 	  <action name="Execute">
-		<command>wofi --show drun</command>
-	  </action>
-	</keybind>
-
-	<keybind key="W-d">
-	  <action name="Execute">
-		<command>dmenu_run</command>
+		<command>xfce4-appfinder</command>
 	  </action>
 	</keybind>
 
@@ -74,7 +68,7 @@ set of options with comments, see docs/rc.xml.all
 
 	<keybind key="A-1">
 	  <action name="GoToDesktop">
-	  <to>1</to>
+		<to>1</to>
 	  </action>
 	</keybind>
 
@@ -104,7 +98,6 @@ set of options with comments, see docs/rc.xml.all
 	  <naturalScroll>yes</naturalScroll>
 	</device>
   </libinput>
-
   
 
 </labwc_config>

@@ -1,0 +1,150 @@
+* {
+  border: none;
+  border-radius: 0;
+  font-family: Cantarell, "Iosevka Nerd Font", sans-serif;
+  font-size: 11px;
+  font-weight: 400;
+  min-height: 0;
+  padding: 0;
+  margin: 0;
+}
+
+window#waybar {
+  background: rgba(28, 28, 28, 0.85);
+  color: #eeeeec;
+  border-radius: 4px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+window#waybar.hidden {
+  opacity: 0.2;
+}
+
+/* Left modules */
+#custom-wofi,
+#workspaces {
+  margin: 3px 4px;
+}
+
+#custom-wofi {
+  padding: 4px 8px;
+  background: rgba(53, 132, 228, 0.9);
+  color: #ffffff;
+  border-radius: 4px;
+  font-size: 12px;
+  transition: all 0.2s ease;
+}
+
+#custom-wofi:hover {
+  background: rgba(53, 132, 228, 1.0);
+  box-shadow: 0 2px 6px rgba(53, 132, 228, 0.3);
+}
+
+#workspaces {
+  background: rgba(60, 60, 60, 0.5);
+  border-radius: 6px;
+  padding: 2px;
+}
+
+#workspaces button {
+  padding: 3px 6px;
+  margin: 1px;
+  background: transparent;
+  color: #babdb6;
+  border-radius: 3px;
+  font-size: 11px;
+  transition: all 0.2s ease;
+}
+
+#workspaces button:hover {
+  background: rgba(238, 238, 236, 0.15);
+  color: #eeeeec;
+}
+
+#workspaces button.active {
+  background: rgba(53, 132, 228, 0.8);
+  color: #ffffff;
+  font-weight: 500;
+}
+
+#workspaces button.urgent {
+  background: rgba(237, 51, 59, 0.8);
+  color: #ffffff;
+}
+
+/* Center taskbar */
+#taskbar {
+  margin: 3px 8px;
+  background: rgba(60, 60, 60, 0.4);
+  border-radius: 6px;
+  padding: 2px;
+}
+
+#taskbar button {
+  padding: 3px 6px;
+  margin: 1px;
+  background: transparent;
+  color: #babdb6;
+  border-radius: 3px;
+  transition: all 0.15s ease;
+}
+
+#taskbar button:hover {
+  background: rgba(238, 238, 236, 0.1);
+  color: #eeeeec;
+}
+
+#taskbar button.active {
+  background: rgba(238, 238, 236, 0.15);
+  color: #eeeeec;
+  font-weight: 500;
+}
+
+#taskbar button.minimized {
+  opacity: 0.6;
+}
+
+/* Right modules */
+#pulseaudio,
+#battery,
+#tray,
+#clock {
+  padding: 4px 8px;
+  margin: 3px 2px;
+  background: rgba(60, 60, 60, 0.5);
+  color: #eeeeec;
+  border-radius: 4px;
+  transition: all 0.15s ease;
+}
+
+#pulseaudio:hover,
+#battery:hover,
+#clock:hover {
+  background: rgba(80, 80, 80, 0.6);
+}
+
+#battery.warning {
+  color: #f6d32d;
+}
+
+#battery.critical {
+  background: rgba(237, 51, 59, 0.2);
+  color: #ed333b;
+}
+
+#clock {
+  font-weight: 500;
+}
+
+#tray {
+  background: rgba(60, 60, 60, 0.4);
+}
+
+#tray>.passive {
+  -gtk-icon-effect: dim;
+}
+
+#tray>.needs-attention {
+  -gtk-icon-effect: highlight;
+  background-color: rgba(237, 51, 59, 0.3);
+}

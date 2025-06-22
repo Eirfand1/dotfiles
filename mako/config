@@ -1,0 +1,19 @@
+# ~/.config/mako/config
+
+font=Sans 10
+background-color=#1e1e1ecc 
+text-color=#eeeeee
+border-color=#3c3c3c
+border-size=1
+border-radius=8
+padding=8
+margin=16
+default-timeout=5000
+
+anchor=top-right
+
+icons=1
+max-icon-size=64
+
+# rounded shadow effect (fake blur feel)
+layer=overlay
